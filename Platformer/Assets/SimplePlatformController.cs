@@ -26,7 +26,7 @@ public class SimplePlatformController : MonoBehaviour {
 	//Update is called once per frame
 	void Update ()
 	{
-		grounded = physics2D.Linecast(transform.position, groundCheck.position , 1 << LayerMask.NameToLayer("Ground"));
+		grounded = Physics2D.Linecast(transform.position, groundCheck.position , 1 << LayerMask.NameToLayer("Ground"));
 
 		if(Input.GetButtonDown("Jump") && grounded)
 		{
@@ -64,7 +64,7 @@ public class SimplePlatformController : MonoBehaviour {
 	{
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
-		thescale.x *= -1;
+		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
 }

@@ -1,7 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections;
-using UnityEngine.¡
 
 public class PickupCoin : MonoBehaviour{
 
@@ -15,9 +13,9 @@ public class PickupCoin : MonoBehaviour{
 
   }
 
-  void OnTriggerEnter2D (Collider2d other)
+  void OnTriggerEnter2D (Collider2D other)
   {
-    if (other.gameObject.CompareTag(Player))
+    if (other.gameObject.CompareTag("Player"))
       Destroy(gameObject);
   }
 }

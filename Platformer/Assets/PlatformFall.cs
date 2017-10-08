@@ -10,7 +10,7 @@ public class PlatformFall : MonoBehaviour {
 
   void Awake()
   {
-    rb2d = GetComponent<RigidBody2D>();
+    rb2d = GetComponent<Rigidbody2D>();
   }
 
   void OnCollisionEnter2D (Collision2D other)

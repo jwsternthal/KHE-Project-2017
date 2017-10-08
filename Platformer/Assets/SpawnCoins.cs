@@ -18,8 +18,8 @@ public class SpawnCoins : MonoBehaviour{
     {
       int coinFlip = Random.Range (0, 2);
       if (coinFlip > 0)
-        Instantiate(coin, coinSpawns[i].position, Quaternion.Identity);
+        Instantiate(coin, coinSpawns[i].position, Quaternion.identity);
     }
   }
-  
+
 }

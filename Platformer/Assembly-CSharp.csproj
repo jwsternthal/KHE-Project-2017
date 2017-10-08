@@ -51,8 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Manager.cs" />
      <Compile Include="Assets\PickupCoin.cs" />
      <Compile Include="Assets\PlatformFall.cs" />
+     <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\Reset.cs" />
      <Compile Include="Assets\SimplePlatformController.cs" />
      <Compile Include="Assets\SpawnCoins.cs" />
